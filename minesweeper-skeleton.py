@@ -26,8 +26,8 @@ class App(tk.Tk):
                 self.buttons[buttonNum].bind("<Button-3>", lambda event, x=buttonNum: self.buttonRightClicked(event, x))
                 self.buttons[buttonNum].config(height=50, width=50)
                 self.buttons[-1].grid(row=rownum, column=columnnum, sticky="NSEW")
-                #self.buttongrid.rowconfigure(rownum, weight=1)
-                #self.buttongrid.columnconfigure(columnnum, weight=1)
+                self.buttongrid.rowconfigure(rownum, weight=1)
+                self.buttongrid.columnconfigure(columnnum, weight=1)
                 buttonNum += 1
         self.rowconfigure(2, weight=1)
         self.columnconfigure(1, weight=1)
