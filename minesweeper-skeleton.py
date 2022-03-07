@@ -80,7 +80,7 @@ class App(tk.Tk):
         self.placeMines()
         #after calling placeMines, this puts all the buttons back to their blank starting style
         for button in self.buttons:
-            button.config(state="normal", text=" ", relief="raised", bg="SystemButtonFace", image="")
+            button.config(state="normal", text=" ", relief="raised", bg="lightgrey", image="")
         self.gameOn = True
 
 
